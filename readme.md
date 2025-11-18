@@ -1,143 +1,51 @@
-# BlockBench: Blockchain Domain Expertise Benchmark Dataset
+# Blockbench Datasets
 
-## Overview
-
-BlockBench is a comprehensive benchmark dataset designed to evaluate AI scientist domain expertise across critical areas of blockchain development. This dataset contains carefully curated problems that test deep understanding of smart contract security, gas optimization, legal compliance, oracle integration, and cross-chain design patterns.
-
-## Purpose
-
-This benchmark suite aims to:
-
-- Assess AI models' ability to identify and resolve complex blockchain vulnerabilities
-- Evaluate understanding of Ethereum and other blockchain ecosystems
-- Test knowledge of best practices across multiple blockchain domains
-- Provide standardized problems for comparing AI performance in blockchain development
-
-## Problem Categories
-
-### 🔒 Security (Tasks 1-5)
-
-The security category focuses on identifying and fixing vulnerabilities in smart contracts, including:
-
-- Reentrancy attacks
-- Access control issues
-- Integer overflow/underflow vulnerabilities
-- Logic errors and edge cases
-- Cryptographic implementation flaws
-- State manipulation vulnerabilities
-- Cross-chain bridge security issues
-
-**Current Tasks:**
-
-- **Task-1**: Scroll Verifier Hooks Security Analysis (Rust)
-- **Task-2**: Floating Point Library Security Review (Solidity)
-- **Task-3**: Cross-Chain Token Bridge Security (Solidity)
-- **Task-4**: Upgradeable Token Contract Security (Solidity)
-- **Task-5**: Multi-Contract Security Analysis (Solidity)
-
-### ⛽ Gas Optimization (Coming Soon)
-
-Problems focusing on:
-
-- Storage optimization
-- Loop efficiency
-- Function visibility and modifiers
-- Assembly optimization
-- Contract size reduction
-- Transaction cost minimization
-
-### ⚖️ Legal & Compliance (Coming Soon)
-
-Scenarios covering:
-
-- Regulatory compliance considerations
-- Token classification issues
-- Jurisdictional requirements
-- AML/KYC integration patterns
-- Terms of service enforcement
-- Intellectual property concerns
-
-### 🔮 Oracle Knowledge (Coming Soon)
-
-Challenges involving:
-
-- Oracle manipulation attacks
-- Price feed reliability
-- Data freshness and staleness
-- Multi-oracle aggregation strategies
-- Oracle failure handling
-- Chainlink, Band Protocol, and other oracle integrations
-
-### 🌉 Cross-Chain Design (Coming Soon)
-
-Problems addressing:
-
-- Bridge architecture patterns
-- Message passing protocols
-- State synchronization
-- Interoperability standards
-- Cross-chain asset management
-- LayerZero, Wormhole, and other bridge technologies
+This repository contains a collection of smart contract security audit tasks designed to test domain knowledge across various blockchain and cryptographic concepts.
 
 ## Dataset Structure
 
-```
-datasets/
-├── Task-1/          # Security Problem 1
-│   ├── problem.rs   # Problem code file
-│   └── prompt_*.py  # Evaluation prompts
-├── Task-2/          # Security Problem 2
-│   ├── problem.sol  # Problem code file
-│   └── prompt_*.py  # Evaluation prompts
-├── Task-3/          # Security Problem 3
-│   ├── problem.sol  # Problem code file
-│   └── prompt_*.py  # Evaluation prompts
-├── Task-4/          # Security Problem 4
-│   ├── code.sol     # Problem code file
-│   └── prompt*.py   # Evaluation prompts
-├── Task-5/          # Security Problem 5
-│   ├── codeblock*.sol  # Problem code files
-│   └── prompt*.py      # Evaluation prompts
-└── readme.md        # This file
-```
+Each task folder contains:
+
+- **Problem files**: The smart contract code to be audited (`.sol` or `.rs` files)
+- **Prompt files**: Python scripts containing the audit prompts and instructions
+- **description.md**: A detailed description of the task's domain knowledge focus and main aspects
+
+## Tasks Overview
+
+### Task 1: Zero-Knowledge Proof Verification
+
+**Domain**: Zero-knowledge proofs and cryptographic verification  
+**File**: `Task-1/problem.rs`  
+**Focus**: Tests knowledge of ZKP verification systems, Merkle tree traversal, Poseidon hash functions, and proof validation logic.
+
+### Task 2: Floating Point Arithmetic Library
+
+**Domain**: Numerical computation and precision handling  
+**File**: `Task-2/problem.sol`  
+**Focus**: Tests knowledge of floating-point arithmetic, precision management, mathematical operations, and assembly-level optimizations.
+
+### Task 3: Cross-Chain Token Bridge
+
+**Domain**: Cross-chain protocols and LayerZero integration  
+**File**: `Task-3/problem.sol`  
+**Focus**: Tests knowledge of cross-chain token bridging, LayerZero OFT standard, transfer restrictions, and access control mechanisms.
+
+### Task 4: Staking Token Contract
+
+**Domain**: Token staking and delegation systems  
+**File**: `Task-4/code.sol`  
+**Focus**: Tests knowledge of staking mechanisms, ERC20Votes delegation, upgradeable contracts, and reentrancy protection.
+
+### Task 5: Staking Accounting System
+
+**Domain**: Staking economics and exchange rate calculations  
+**File**: `Task-5/mergedcode.sol`  
+**Focus**: Tests knowledge of staking economics, dynamic exchange rates, withdrawal queue systems, and multi-manager coordination.
 
 ## Usage
 
-Each task directory contains:
+Each task is designed to evaluate security auditing capabilities in specific blockchain domains. Review the `description.md` file in each task folder for detailed information about what domain knowledge is being tested.
 
-- **Problem files**: Smart contract code (`.sol`) or Rust code (`.rs`) with intentional vulnerabilities or issues
-- **Prompt files**: Python scripts containing evaluation prompts and test cases
+## Playground
 
-### Evaluation Process
-
-1. **Problem Analysis**: Review the provided code files
-2. **Issue Identification**: Identify security vulnerabilities, optimization opportunities, or design flaws
-3. **Solution Development**: Propose fixes or improvements
-4. **Testing**: Use provided prompts to validate solutions
-
-## Contributing
-
-When adding new tasks:
-
-- Ensure problems are realistic and based on real-world scenarios
-- Include clear problem descriptions
-- Provide evaluation criteria
-- Test all prompts and solutions
-
-## Language Support
-
-- **Solidity**: Primary language for Ethereum smart contracts
-- **Rust**: Used for blockchain infrastructure and verification systems
-
-## Version Information
-
-- **Current Version**: 1.0.0
-- **Last Updated**: 2024
-
-## License
-
-[Specify your license here]
-
-## Acknowledgments
-
-This benchmark dataset is designed to advance AI capabilities in blockchain development and security analysis.
+The `playground/` directory contains additional markdown files for testing and experimentation.
