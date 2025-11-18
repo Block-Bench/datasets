@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Task 1 Results</text>
+  
+  <!-- Y-axis label -->
+  <text x="20" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" transform="rotate(-90 20 150)">Score</text>
+  
+  <!-- Y-axis grid lines and labels -->
+  <line x1="60" y1="250" x2="360" y2="250" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="50" y="255" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#666">0</text>
+  
+  <line x1="60" y1="200" x2="360" y2="200" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="50" y="205" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#666">5</text>
+  
+  <line x1="60" y1="150" x2="360" y2="150" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="50" y="155" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#666">10</text>
+  
+  <!-- Bars -->
+  <!-- Model A (Grok) - Black, Score: 9 -->
+  <rect x="100" y="160" width="60" height="90" fill="#000000"/>
+  <text x="130" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000000">9</text>
+  <text x="130" y="270" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">Grok</text>
+  
+  <!-- Model B (Sonnet-4.5) - Orange, Score: 9 -->
+  <rect x="170" y="160" width="60" height="90" fill="#ff8800"/>
+  <text x="200" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ff8800">9</text>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">Sonnet-4.5</text>
+  
+  <!-- Model C (GPT 5.1) - Green, Score: 10 -->
+  <rect x="240" y="150" width="60" height="100" fill="#00aa00"/>
+  <text x="270" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#00aa00">10</text>
+  <text x="270" y="270" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">GPT 5.1</text>
+  
+  <!-- X-axis -->
+  <line x1="60" y1="250" x2="360" y2="250" stroke="#333" stroke-width="2"/>
+</svg>
+
