@@ -1,0 +1,5 @@
+Report Title,Audit Dates,Report URL
+2025-09 LayerZero Endpoint V2 SUI,"September 17 – 30, 2025",https://code4rena.com/reports/2025-09-layerzero-endpoint-v2-sui - NA - H0 M0
+2025-10 Hybra Finance,"October 6 – 16, 2025",https://code4rena.com/reports/2025-10-hybra-finance - 10 Found - H1 M9
+2025-10 Sequence,"October 7 – 22, 2025",https://code4rena.com/reports/2025-10-sequence - 6 Found - H2 M4
+2025-10 Covenant,"October 22 – November 3, 2025",https://code4rena.com/reports/2025-10-covenant - NA - H0 M0
